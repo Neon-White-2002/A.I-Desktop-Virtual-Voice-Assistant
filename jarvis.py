@@ -98,10 +98,10 @@ def Event():
         print("Sir ! Wishing them please wait.")
         speak("Sir ! Wishing them please wait.")
 
-        kit.sendwhatmsg("+919028259775",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Wishing a perfect pair a perfectly happy day. \n HAPPY MARRIAGE ANNIVERSARY MUMMY!", hour,
                         min)
-        kit.sendwhatmsg("+919820740326",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Wishing a perfect pair a perfectly happy day. \n HAPPY MARRIAGE ANNIVERSARY DADDY!", hour,
                         min)
         print("Sir ! Message has been sent to Mummy & Daddy.")
@@ -123,7 +123,7 @@ def Event():
         print("Sir ! Wishing to Mom please wait.")
         speak("Sir ! Wishing to Mom please wait.")
 
-        kit.sendwhatmsg("+919028259775",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Thank you for always comforting me when I was sad and making me laugh whenever I cried... \n HAPPY BIRTHDAY MUMMY LOVE YOU SO MUCH.!",
                         hour, min)
         print("Sir ! Message has been sent to Mummy.")
@@ -140,7 +140,7 @@ def Event():
         print("Many Many Happy Returns of the day Sir !")
         speak("Many Many Happy Returns of the day Sir !")
 
-        kit.sendwhatmsg("+919137868099",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"The day has come again for me to say a wish, and I wish myself success and everlasting happiness as I celebrate a birthday full of joy today. I am very thankful and grateful to the Almighty for granting me yet another year. I pray for an abundance of grace in my world.",
                         hour, min)
         print("Sir, now what should I do for you?")
@@ -153,7 +153,7 @@ def Event():
         print("Sir ! Wishing to Daddy please wait.")
         speak("Sir ! Wishing to Daddy please wait.")
 
-        kit.sendwhatmsg("+919820740326",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Happy birthday! Daddy, you've given me so many invaluable things in life and I will always be grateful for them. May your special day bring you plenty of wonderful surprises! I am lucky that I was given the best father in the world, a father who truly loves me with all of his heart.",
                         hour, min)
         print("Sir ! Message has been sent to Daddy.")
@@ -188,10 +188,10 @@ def checkEvent():
         print("Sir ! Wishing them please wait.")
         speak("Sir ! Wishing them please wait.")
 
-        kit.sendwhatmsg("+919028259775",
+        kit.sendwhatmsg("MOBILE-NUMBER (+919874563210)",
                         f"Wishing a perfect pair a perfectly happy day. \n HAPPY MARRIAGE ANNIVERSARY MUMMY!", hour,
                         min)
-        kit.sendwhatmsg("+919820740326",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Wishing a perfect pair a perfectly happy day. \n HAPPY MARRIAGE ANNIVERSARY DADDY!", hour,
                         min)
         print("Sir ! Message has been sent to Mummy & Daddy.")
@@ -219,7 +219,7 @@ def checkEvent():
         print("Sir ! Wishing to Mom please wait.")
         speak("Sir ! Wishing to Mom please wait.")
 
-        kit.sendwhatmsg("+919028259775",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Thank you for always comforting me when I was sad and making me laugh whenever I cried... \n HAPPY BIRTHDAY MUMMY LOVE YOU SO MUCH.!",
                         hour, min)
         print("Sir ! Message has been sent to Mummy.")
@@ -255,7 +255,7 @@ def checkEvent():
         print("Sir ! Wishing to Daddy please wait.")
         speak("Sir ! Wishing to Daddy please wait.")
 
-        kit.sendwhatmsg("+919820740326",
+        kit.sendwhatmsg("MOBILE-NUMBER",
                         f"Happy birthday! Daddy, you've given me so many invaluable things in life and I will always be grateful for them. May your special day bring you plenty of wonderful surprises! I am lucky that I was given the best father in the world, a father who truly loves me with all of his heart.",
                         hour, min)
         print("Sir ! Message has been sent to Daddy.")
@@ -474,7 +474,7 @@ def stockMarket():
 def sendMessage():
     speak("Sir your Contact is been displayed.")
     contacts = ["Mom", "Dad", "Me"]
-    numbers = ["+919028259775", "+919820740326", "+919137868099"]
+    numbers = ["YOUR CONTACT-NUMBER LIST"]
     print("Sir Yours Contact List: -")
     for x in contacts:
         print(x)
@@ -638,7 +638,7 @@ def CheckWeather():
     print("Sir, of which city you want to find weather ?")
     speak("Sir, of which city you want to find weather ?")
     CITY = takeCommand()
-    API_KEY = "576b39c9be8cede3a8038ec4f341d678"
+    API_KEY = "YOUR-API-KEY-HERE!"
 
     URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
     response = requests.get(URL)
